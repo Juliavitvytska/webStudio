@@ -1,0 +1,112 @@
+.team{
+  text-align: center;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  background-color: $section-bcg;
+
+  @media screen and (min-width: $desktop){
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
+}
+
+.team__list{
+  @media screen and (min-width: $tablet){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.team__member{
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  &:nth-child(-n+3){
+  @media screen and (max-width: $max-mobile){
+    margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet){
+    width: calc((100% - 2 * 15px) / 2);
+    &:nth-child(-n+2){
+      margin-bottom: 30px;
+    }
+
+    &:nth-child(odd){
+    margin-right: 30px;
+    }
+  }
+  @media screen and (min-width: $desktop){
+    margin-bottom: 0;
+    width: calc((100% - 6 * 15px) / 4);
+
+    &:not(:last-child){
+    margin-right: 30px;
+  }
+}
+    &:last-child{
+      margin-bottom: 0;
+    }
+}
+
+.team__person{
+  margin-bottom: 10px;
+  padding-top: 30px;
+
+  @include font-data(16px, $title-text-color, 500, 1.19, 0.03em);
+}
+
+.team__socialmedia{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: $max-mobile){
+    padding: 16px 122px 24px 122px;
+  }
+
+  @media screen and (min-width: $tablet){
+    padding: 16px 74px 24px 74px;
+  }
+
+  @media screen and (min-width: $desktop){
+    padding: 16px 32px 30px 32px;
+  }
+
+}
+
+.link-instagram,
+.link-twitter,
+.link-facebook,
+.link-linkedin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  fill: $clients-color;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  transition: 250ms background-color $timing-function,
+    fill 250ms $timing-function;
+}
+
+.link-instagram:hover,
+.link-twitter:hover,
+.link-facebook:hover,
+.link-linkedin:hover,
+.link-instagram:focus,
+.link-twitter:focus,
+.link-facebook:focus,
+.link-linkedin:focus {
+  background-color: $primary-blue-color;
+  fill: $white-color;
+}
+
+

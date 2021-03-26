@@ -1,0 +1,29 @@
+.logo-blue {
+  font-family: $font-raleway;
+  @media screen and (max-width: $max-tablet) {
+    @include font-data(24px, $primary-blue-color, 700, 1.2, 0.03em);
+  }
+  @media screen and (min-width: $desktop) {
+    @include font-data(26px, $primary-blue-color, 700, 1.2, 0.03em);
+  }
+}
+
+.logo-black {
+  font-family: $font-raleway;
+  @media screen and (max-width: $max-tablet) {
+    @include font-data(24px, $title-text-color, 700, 1.2, 0.03em);
+  }
+  @media screen and (min-width: $desktop) {
+    @include font-data(26px, $title-text-color, 700, 1.2, 0.03em);
+  }
+}
+
+.logo-white {
+  font-family: $font-raleway;
+  @media screen and (max-width: $max-tablet) {
+    @include font-data(24px, $white-color, 700, 1.2, 0.03em);
+  }
+  @media screen and (min-width: $desktop) {
+    @include font-data(26px, $white-color, 700, 1.2, 0.03em);
+  }
+}

@@ -1,0 +1,43 @@
+.activity {
+  padding-bottom: 94px;
+
+  @media screen and (max-width: $max-tablet){
+    display: none;
+  }
+}
+
+.activity__list {
+  display: flex;
+}
+
+.activity__item:not(:last-child){
+margin-right: 30px;
+}
+
+.activity__description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.activity__info {
+  padding-bottom: 27px;
+  padding-top: 27px;
+
+  text-transform: uppercase;
+  @include font-data(14px, $white-color, 700, 1.14, 0.03em);
+}
+
+.activity__overlay {
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+  height: 70px;
+  
+  background-color: $activity-bcg;
+}
+
+.activity__thumb {
+  position: relative;
+}

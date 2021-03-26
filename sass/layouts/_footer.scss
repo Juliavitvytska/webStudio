@@ -1,0 +1,147 @@
+.footer{
+  align-items: center;
+  background-color: $footer-bcg-color;
+  padding-bottom: 60px;
+  padding-top: 60px;
+
+  & .container{
+    @media screen and (min-width: $desktop){
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+}
+
+
+
+.footer_container{
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet){
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: $desktop){
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+}
+
+.footer__info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  @media screen and (min-width: $desktop){
+    margin-right: 70px;
+    align-items: start;
+  }
+}
+
+.adress__items{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  margin-bottom: 60px;
+
+  @media screen and (min-width: $tablet){
+  margin-bottom: 0;
+  }
+
+  @media screen and (min-width: $desktop){
+  text-align: start;
+  // margin-bottom: 0;
+  }
+}
+
+.adress__link{
+  display: block;
+
+  font-style: normal;
+  @include font-data(14px, $white-color, 400, 1.71, 0.03em);
+}
+
+.logo__link{
+  margin-bottom: 20px;
+}
+
+.adress__list:nth-child(-n+2){
+  margin-bottom: 8px;
+}
+
+.mail__footer,
+.tel__footer{
+  display: block;
+
+  font-style: normal;
+  @include font-data(14px, $text-footer, 400, 1.71, 0.03em);
+}
+
+.socialmedia__footer{
+  display: flex;
+}
+
+.instagram-footer,
+.twitter-footer,
+.facebook-footer,
+.linkedin-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  fill: $white-color;
+  background-color: $social-footer;
+
+  transition: 250ms background-color $timing-function,
+    fill 250ms $timing-function;
+}
+
+
+.instagram-footer:hover,
+.twitter-footer:hover,
+.facebook-footer:hover,
+.linkedin-footer:hover,
+.instagram-footer:focus,
+.twitter-footer:focus,
+.facebook-footer:focus,
+.linkedin-footer:focus {
+  background-color: $primary-blue-color;
+}
+
+.social__invite,
+.form__invite{
+  margin-bottom: 20px;
+
+  @include font-data(14px, $white-color, 700, 1.14, 0.03em);
+  text-transform: uppercase;
+}
+
+.social{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet){
+  margin-bottom: 0;
+  }
+
+  @media screen and (min-width: $desktop){
+  align-items: start;
+  margin-bottom: 0;
+}
+}
+
+.social-link:nth-child(-n+3){
+  margin-right: 10px;
+}

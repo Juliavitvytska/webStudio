@@ -1,0 +1,26 @@
+// @import "./utils/main.scss";
+
+// @import "./base/base-style";
+
+// @import "./components/main.scss";
+
+@import "./utils/breakpoints";
+@import "./utils/mixins";
+@import "./utils/variables";
+
+@import "./base/base-style";
+
+@import "./components/logo";
+@import "./components/menu";
+@import "./components/hero";
+@import "./components/advantages";
+@import "./components/team";
+@import "./components/customers";
+@import "./components/portfolio-buttons";
+@import "./components/layouts-portfolio";
+@import "./components/activity";
+@import "./components/modal";
+
+@import "./layouts/header";
+@import "./layouts/footer";
+@import "./layouts/footer_form";
